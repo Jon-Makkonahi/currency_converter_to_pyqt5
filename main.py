@@ -1,7 +1,7 @@
 import sys
 from PyQt5 import QtWidgets
 from PyQt5.QtGui import QIcon
-from converter import Ui_MainWindow
+from ui import Ui_MainWindow
 from currency_converter import CurrencyConverter
 
 
