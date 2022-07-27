@@ -1,0 +1,1 @@
+pyuic5.exe -x "Cюда поставьте свой адресс до репозитория, примерно 'F:\'"Currency_Converter_To_PyQt5\converter.ui -o "Cюда тоже так"Currency_Converter_To_PyQt5\converter.py
