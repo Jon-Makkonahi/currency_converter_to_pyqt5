@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>644</width>
+    <height>621</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Kaspersky Security Center Analyzer</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(85, 170, 127);</string>
+   </property>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>-100</x>
+      <y>-20</y>
+      <width>971</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(58, 117, 87);
+</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>30</y>
+       <width>541</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe UI</family>
+       <pointsize>20</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Kaspersky Security Center Analyzer</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLineEdit" name="input_ip_address">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>160</y>
+      <width>241</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+border: 3px solid rgb(78, 156, 116);
+border-radius: 15;
+color: rgb(0, 0, 0);</string>
+    </property>
+    <property name="inputMask">
+     <string/>
+    </property>
+    <property name="text">
+     <string>Введите IP-адрес сервера</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="input_fileaddress">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>310</y>
+      <width>241</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+border: 3px solid rgb(78, 156, 116);
+border-radius: 15;
+color: rgb(0, 0, 0);</string>
+    </property>
+    <property name="inputMask">
+     <string/>
+    </property>
+    <property name="text">
+     <string>Введите адрес для сохранения</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="input_login">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>410</y>
+      <width>241</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+border: 3px solid rgb(78, 156, 116);
+border-radius: 15;
+color: rgb(0, 0, 0);</string>
+    </property>
+    <property name="inputMask">
+     <string/>
+    </property>
+    <property name="text">
+     <string>Введите ЛОГИН</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="input_password">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>460</y>
+      <width>241</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+border: 3px solid rgb(78, 156, 116);
+border-radius: 15;
+color: rgb(0, 0, 0);</string>
+    </property>
+    <property name="inputMask">
+     <string/>
+    </property>
+    <property name="text">
+     <string>Введите ПАРОЛЬ</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="enter_ip_address">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>210</y>
+      <width>241</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	color: rgb(255, 255, 255);
+	background-color: rgb(69, 138, 102);
+	border-radius : 15;
+}
+
+QPushButton: pressed {
+	color: rgb(255, 255, 255);
+	background-color: rgb(55, 111, 82);
+	border-radius : 15;
+}</string>
+    </property>
+    <property name="text">
+     <string>Подключиться к серверу</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="enter_fileaddress">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>360</y>
+      <width>241</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	color: rgb(255, 255, 255);
+	background-color: rgb(69, 138, 102);
+	border-radius : 15;
+}
+
+QPushButton: pressed {
+	color: rgb(255, 255, 255);
+	background-color: rgb(55, 111, 82);
+	border-radius : 15;
+}</string>
+    </property>
+    <property name="text">
+     <string>Ввод</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ente_autorization_DIB">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>510</y>
+      <width>241</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	color: rgb(255, 255, 255);
+	background-color: rgb(69, 138, 102);
+	border-radius : 15;
+}
+
+QPushButton: pressed {
+	color: rgb(255, 255, 255);
+	background-color: rgb(55, 111, 82);
+	border-radius : 15;
+}</string>
+    </property>
+    <property name="text">
+     <string>Авторизоваться-DIB</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ente_autorization_DIB_2">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>560</y>
+      <width>241</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	color: rgb(255, 255, 255);
+	background-color: rgb(69, 138, 102);
+	border-radius : 15;
+}
+
+QPushButton: pressed {
+	color: rgb(255, 255, 255);
+	background-color: rgb(55, 111, 82);
+	border-radius : 15;
+}</string>
+    </property>
+    <property name="text">
+     <string>Авторизоваться-RNKO</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="download_policies">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>160</y>
+      <width>251</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	color: rgb(255, 255, 255);
+	background-color: rgb(69, 138, 102);
+	border-radius : 15;
+}
+
+QPushButton: pressed {
+	color: rgb(255, 255, 255);
+	background-color: rgb(55, 111, 82);
+	border-radius : 15;
+}</string>
+    </property>
+    <property name="text">
+     <string>Собрать данные из раздела &quot;Политики&quot;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="download_tasks">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>210</y>
+      <width>251</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	color: rgb(255, 255, 255);
+	background-color: rgb(69, 138, 102);
+	border-radius : 15;
+}
+
+QPushButton: pressed {
+	color: rgb(255, 255, 255);
+	background-color: rgb(55, 111, 82);
+	border-radius : 15;
+}</string>
+    </property>
+    <property name="text">
+     <string>Собрать данные из раздела &quot;Задачи&quot;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="download_policies_from_file">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>260</y>
+      <width>251</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	color: rgb(255, 255, 255);
+	background-color: rgb(69, 138, 102);
+	border-radius : 15;
+}
+
+QPushButton: pressed {
+	color: rgb(255, 255, 255);
+	background-color: rgb(55, 111, 82);
+	border-radius : 15;
+}</string>
+    </property>
+    <property name="text">
+     <string>Загрузить словарь политик из файла</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="download_tasks_from_file">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>310</y>
+      <width>251</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	color: rgb(255, 255, 255);
+	background-color: rgb(69, 138, 102);
+	border-radius : 15;
+}
+
+QPushButton: pressed {
+	color: rgb(255, 255, 255);
+	background-color: rgb(55, 111, 82);
+	border-radius : 15;
+}</string>
+    </property>
+    <property name="text">
+     <string>Загрузить словарь задач из файла</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="dowload_profiles_from_file">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>360</y>
+      <width>251</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	color: rgb(255, 255, 255);
+	background-color: rgb(69, 138, 102);
+	border-radius : 15;
+}
+
+QPushButton: pressed {
+	color: rgb(255, 255, 255);
+	background-color: rgb(55, 111, 82);
+	border-radius : 15;
+}</string>
+    </property>
+    <property name="text">
+     <string>Загрузить словарь профилей из файла</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="run_script_for_tasks">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>510</y>
+      <width>251</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	color: rgb(255, 255, 255);
+	background-color: rgb(69, 138, 102);
+	border-radius : 15;
+}
+
+QPushButton: pressed {
+	color: rgb(255, 255, 255);
+	background-color: rgb(55, 111, 82);
+	border-radius : 15;
+}</string>
+    </property>
+    <property name="text">
+     <string>Запуск скрипта для задач</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="run_script_for_policies">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>460</y>
+      <width>251</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	color: rgb(255, 255, 255);
+	background-color: rgb(69, 138, 102);
+	border-radius : 15;
+}
+
+QPushButton: pressed {
+	color: rgb(255, 255, 255);
+	background-color: rgb(55, 111, 82);
+	border-radius : 15;
+}</string>
+    </property>
+    <property name="text">
+     <string>Запуск скрипта для политик</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="dowload_settings_from_file">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>410</y>
+      <width>251</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	color: rgb(255, 255, 255);
+	background-color: rgb(69, 138, 102);
+	border-radius : 15;
+}
+
+QPushButton: pressed {
+	color: rgb(255, 255, 255);
+	background-color: rgb(55, 111, 82);
+	border-radius : 15;
+}</string>
+    </property>
+    <property name="text">
+     <string>Загрузить словарь настроек из файла</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="run_scripts_for_profiles">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>560</y>
+      <width>251</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	color: rgb(255, 255, 255);
+	background-color: rgb(69, 138, 102);
+	border-radius : 15;
+}
+
+QPushButton: pressed {
+	color: rgb(255, 255, 255);
+	background-color: rgb(55, 111, 82);
+	border-radius : 15;
+}</string>
+    </property>
+    <property name="text">
+     <string>Запуск скрипта для профилей</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="enter_ip_address_2">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>260</y>
+      <width>241</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	color: rgb(255, 255, 255);
+	background-color: rgb(69, 138, 102);
+	border-radius : 15;
+}
+
+QPushButton: pressed {
+	color: rgb(255, 255, 255);
+	background-color: rgb(55, 111, 82);
+	border-radius : 15;
+}</string>
+    </property>
+    <property name="text">
+     <string>Отключиться от сервера</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
