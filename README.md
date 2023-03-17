@@ -1,4 +1,4 @@
-# Currency_Converter_To_PyQt5
+# currency_converter_to_pyqt5
 Программа, функционал которой предоставляет 
 cобой конвертацию валют.
 
